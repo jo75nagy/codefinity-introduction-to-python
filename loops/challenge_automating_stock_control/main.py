@@ -11,9 +11,9 @@ print("Processing started")
 for item_name in inventory:
     current_stock, min_stock, restock_amount, on_sale = inventory[item_name]
     print(f"Processing {item_name}")
-    while current_stock <= min_stock:
+    while current_stock < min_stock:
         current_stock += restock_amount 
         inventory[item_name][0] = current_stock
     if current_stock > discount_threshold and not on_sale:
-        inventory[item_name][3] == True
+        inventory[item_name][3] = True
 print("Processing completed")
