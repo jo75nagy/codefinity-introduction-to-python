@@ -9,9 +9,9 @@ for item_name in inventory:  # item_name -> ("Az elsö elem a sorban utäna egy 
     
     if current_stock < 30:
         print(f"{item_name} need restocking.")
-    if current_stock > 100:
+    elif current_stock > 100:
         print(f"{item_name} should be sold at the discounted price of {discounted_price}.") # elöhivashoz: { Var}
-    if current_stock >= 30 and current_stock <= 100:
+    elif current_stock >= 30 and current_stock <= 100:
         print(f"{item_name} should be sold at the regular price of {reg_price}.")
 
 
