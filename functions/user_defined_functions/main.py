@@ -1,7 +1,7 @@
 # Call the function and print the result
 def calculate_total_cost(price, quantity):
-    calculate_total_cost = price*quantity
-    return calculate_total_cost
+    total_cost = price*quantity
+    return total_cost
 
 
 apples_total_cost = calculate_total_cost(1.50, 10)
